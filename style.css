@@ -60,11 +60,7 @@ body{
           width: fit-content;
 
     }
-    #videoframe{
-        padding-left: 100px;
-        width:fit-content;
-        border-style: inset;
-    }
+
     @media(max-width:900px){
     #grid{
         display: block;
