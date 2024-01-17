@@ -50,7 +50,12 @@ body{
     margin-left: 40px;
    }
    #modelname{
-    padding-top: 45px;
+    padding-top: 50px;
+    font-size: large;
+   }
+   #seriesname{
+    font-size: larger;
+    font-style: normal;
    }
     
     #grid #apple{
@@ -71,7 +76,14 @@ body{
    }
    
    
+   
 }
+#videotitle{
+    position: absolute;
+    font-size: 25px; 
+    color: darkblue;
+   }
+
 
 #cfcolor{
     color: blue;

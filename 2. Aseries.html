@@ -27,8 +27,9 @@
   <li><a href="9. R series.html">R Series</a></li>
 </ol>
 <div id="apple">
-
-<h2>A series</h2>
+<div id="seriesname">
+<h2>Apple A series</h2>
+</div>
 <div id="boxcontents">
 <p>
 iPhone, ipad 등 Apple의 주력 모바일 기기에 들어가는 Apple Silicon의 핵심 라인업이다. 
@@ -150,7 +151,7 @@ GPU의 경우, IT PowerVR G6430을 사용한다. 타사와 달리 iPhone 5s의 �
   <b>CPU</b>: Apple Typhoon 2코어 (64kb + 64kb L1 Cache / 1MB L2 Cache / 4MB L3 Cache)
   <br><b>GPU</b>: IT PowerVR GX6450
   <br><b>메모리</b>: 64bit LPDDR3 1600MHz
-  <br><b>생산공정</b>: TSMC 20nm SOC(다이사이즈: 89mm^2 / 트렌지스터 개수: 20억)
+  <br><b>생산공정</b>: TSMC 20nm SoC(다이사이즈: 89mm^2 / 트렌지스터 개수: 20억)
   <br><b>주요 사용기기</b>: iPhone 6 / 6Plus, iPad mini 4, iPod touch(Gen_6), HomePod
 </div>
 iPhone 6와 6Plus에 처음 탑재되었으며, Apple Silicon 중에서는 20nm로 생산된 최초의 모바일 AP이다. 또한 Apple의 탈 삼성전략과 삼성LSI의 내부 사정으로 인하여 주력 생산사가 TSMC로 교체되었다. 아마도 삼성LSI의 생산공정 미세화가 진행되면서
@@ -173,7 +174,7 @@ iPhone 6와 6Plus에 처음 탑재되었으며, Apple Silicon 중에서는 20nm�
   <b>CPU</b>: Apple Typhoon 3코어 (64kb + 64kb L1 Cache / 2MB L2 Cache / 4MB L3 Cache)
   <br><b>GPU</b>: IT PowerVR GX6850 475MHz
   <br><b>메모리</b>: 64bit 듀얼채널 LPDDR3 1600MHz 
-  <br><b>생산공정</b>: TSMC 20nm SOC(다이사이즈: 128mm^2 / 트렌지스터 개수: 30억)
+  <br><b>생산공정</b>: TSMC 20nm SoC(다이사이즈: 128mm^2 / 트렌지스터 개수: 30억)
   <br><b>주요 사용기기</b>: iPad Air 2
 </div>
 
@@ -386,7 +387,7 @@ iPad Pro(11형 Gen_2), iPad Pro(12.9형 Gen_4)와 함꼐 공개되엇다. CPU �
 <img src="A13bionic.jpg" width="200">
 <div id="boxcontents2">
   <b>CPU</b>: Apple Lightning 2코어 2.67GHz + Apple Thunder 4코어 1.73GHz <br>(128kb L1 Order Cache + 128kb L1 data Cache / 8MB L2 Cache / 16MB system Cache)
-  <br><b>GPU</b>: 3세대 자체 디자인 Neural Engine 8코어 
+  <br><b>GPU</b>: 3세대 자체 디자인 아키텍처 4코어 1,230 MHz
   <br><b>NPU</b>: 3세대 자체 디자인 Neural Engine 8코어 6 TOPS
   <br><b>메모리</b>: 16bit 쿼드채널 LPDDR4X 2133MHz(34.1 GB/s) 
   <br><b>생산공정</b>: TSMC 7nm FINFET[ArFi] (다이사이즈: 98.48mm^2 / 트랜지스터 개수: 85억)
@@ -481,7 +482,7 @@ iPhone 14Pro 시리즈와 함께 공개되었다. iPhone 14의 일반라인업�
   TSMC 4nm FinFET P (EUV) 공정으로 표기되어 있지만, 실제로는 TSMC의 N5, N5P에 비해 성능과 전력효율이 향상된 사실상의 5nm 공정(N4P)으로 제조되었다. 트랜지스터 개수는 전작 대비 10억 개 증가한 160억 개로 Apple M1과 동일하다.
 </p>
 <p>
-  iPhone 14Pro의 Geekbench 5 벤치마크가 싱글코어 1,887점과 멀티코어 5,455점으로 공개되었다. 전작 대비 각 약 10.5%, 17.1%씩 성능향상이 이루어졌다. 전작 대비 GPU 성능 향상폭이 작았던 탓에, GPU 성능에 한해서는 2022년 하반기에 발표된 퀄컴 스냅드래곤 8 Gen 2에게 역전당했다. 물론 실제 게이밍에서는 GPU뿐만 아니라 CPU에도 상당한 연산량을 요구하기 때문에, 여전히 CPU 성능과 전성비가 Apple Silicon 대비 많이 밀리는 안드로이드 계열 SOC들보다 여전히 더 높은 성능을 보여준다. 여러모로 GPU 한정으로는 여태까지 거머쥐었던 강점이 희석되어버린 상황이기에, 차세대에서 경쟁이 되려면 Apple 또한 공정 미세화나 GPU 아키텍처 변경 등으로 성능을 높은 폭으로 향상시켜야 하는 상황이다. 한편, 이에 대해 'MacRumors'에서는 본래 Apple A16 Bionic에서는 레이 트레이싱 가속을 포함한 새로운 GPU를 적용할 계획으로 개발이 진행되었으나 막바지쯤 발생한 배터리에 치명적인 수준의 전력 소모, 발열의 문제를 해결할 시간적 여유가 없었기 때문에 이 설계를 폐기하고 A15의 GPU와 유사한 설계로 갈 수밖에 없었다는 내용의 기사를 냈다. 이는 TSMC의 3nm공정 생산계획에 차질을 빚으며 생긴 문제들이다.
+  iPhone 14Pro의 Geekbench 5 벤치마크가 싱글코어 1,887점과 멀티코어 5,455점으로 공개되었다. 전작 대비 각 약 10.5%, 17.1%씩 성능향상이 이루어졌다. 전작 대비 GPU 성능 향상폭이 작았던 탓에, GPU 성능에 한해서는 2022년 하반기에 발표된 퀄컴 스냅드래곤 8 Gen 2에게 역전당했다. 물론 실제 게이밍에서는 GPU뿐만 아니라 CPU에도 상당한 연산량을 요구하기 때문에, 여전히 CPU 성능과 전성비가 Apple Silicon 대비 많이 밀리는 안드로이드 계열 SoC들보다 여전히 더 높은 성능을 보여준다. 여러모로 GPU 한정으로는 여태까지 거머쥐었던 강점이 희석되어버린 상황이기에, 차세대에서 경쟁이 되려면 Apple 또한 공정 미세화나 GPU 아키텍처 변경 등으로 성능을 높은 폭으로 향상시켜야 하는 상황이다. 한편, 이에 대해 'MacRumors'에서는 본래 Apple A16 Bionic에서는 레이 트레이싱 가속을 포함한 새로운 GPU를 적용할 계획으로 개발이 진행되었으나 막바지쯤 발생한 배터리에 치명적인 수준의 전력 소모, 발열의 문제를 해결할 시간적 여유가 없었기 때문에 이 설계를 폐기하고 A15의 GPU와 유사한 설계로 갈 수밖에 없었다는 내용의 기사를 냈다. 이는 TSMC의 3nm공정 생산계획에 차질을 빚으며 생긴 문제들이다.
 </p>
 
 
@@ -499,7 +500,7 @@ iPhone 14Pro 시리즈와 함께 공개되었다. iPhone 14의 일반라인업�
   <br><b>생산공정</b>: TSMC 3nm FINFET B[EUV] (다이사이즈: 103.8mm^2 / 트랜지스터 개수: 190억)
   <br><b>주요 사용기기</b>: iPhone 15Pro, iPhone 15Pro Max
 </div>
-iPhone 15Pro 시리즈와 함꼐 공개되었으며, 전작들과는 다르게 접미사에 'Pro(프로)'를 사용하였다. 전작까지 패키지 외부에 각인되어 있었던 SOC이름이 삭제되고 Apple로고만 존재하도록 변경되었다. CPU는 정확한 정보는 알려지지 않았으며 Apple은 키노트에서 자체 성능은 최대 10% 빨라졌다고 밝혔다. 성능 코어는 9-Wide로 확장되고 파이프라인 구조도 변경되었으며, 효율 코어의 경우 직접적인 수치 언급은 없지만 아키텍쳐 변경이 있었고, 경쟁작 대비 최대 3배 좋은 전성비를 보여준다고 한다.
+iPhone 15Pro 시리즈와 함꼐 공개되었으며, 전작들과는 다르게 접미사에 'Pro(프로)'를 사용하였다. 전작까지 패키지 외부에 각인되어 있었던 SoC이름이 삭제되고 Apple로고만 존재하도록 변경되었다. CPU는 정확한 정보는 알려지지 않았으며 Apple은 키노트에서 자체 성능은 최대 10% 빨라졌다고 밝혔다. 성능 코어는 9-Wide로 확장되고 파이프라인 구조도 변경되었으며, 효율 코어의 경우 직접적인 수치 언급은 없지만 아키텍쳐 변경이 있었고, 경쟁작 대비 최대 3배 좋은 전성비를 보여준다고 한다.
 <p>
   GPU는 6코어 구성으로 탑재되었으며, 최대 20% 더 빨라졌다고 밝혔다. 또한, 메시 셰이딩과 하드웨어 레이 트레이싱 가속을 지원하며, MetalFX 업스케일링을 통해 GPU와 Neural Engine이 작업을 분담하여 전력 소모를 줄일 수 있다. 그리고 'Dynamic Caching'기술을 통해 GPU가 메모리에 각 작업당 정확히 필요한 용량만을 능동적으로 할당하며, 낭비를 줄여 메모리를 더 효율적으로 활용할 수 있게 돕는다.
   <p>NPU는 7세대 Apple Neural Engine을 16코어 구성으로 탑재했다. 35 TOPS의 성능을 가지며, 이는 전작의 17 TOPS에 비해 두 배 이상 향상된 것이다.</p>
